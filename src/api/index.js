@@ -1,7 +1,7 @@
 import axios from 'axios'
 import router from '../router'
 
-const DOMAIN = 'http://localhost:3000'
+const DOMAIN = 'http://54.242.71.111:5000'
 const UNAUTHORIZED = 401
 const onUnauthorized = () => {
   router.push(`/login?rPath=${encodeURIComponent(location.pathname)}`)
